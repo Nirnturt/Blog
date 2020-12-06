@@ -95,6 +95,19 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
+    {
+      resolve: "gatsby-source-notion-database-private",
+      options: {
+        sourceConfig: [
+          {
+            name: "posts",
+            table:
+              "https://www.notion.so/eivx/cf08353a513f4dfd9f7fef0c1998ad8b?v=6931c54c7d8944babd835d88670e39da",
+            cacheType: "html",
+          },
+        ],
+      },
+    },
     // `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
